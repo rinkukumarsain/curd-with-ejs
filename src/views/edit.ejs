@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="form-style-5" style="margin-top: 106px">
+        <form action="/update_curd/<%= Edit_Curd._id %>" method="post" style="background-color: #84a8b7";>
+        <fieldset>
+        <legend><span class="number">1</span> Information</legend>
+        <input type="text" name="id" placeholder="Your Id *" value="<%= Edit_Curd.id %>">
+        <input type="text" name="type" placeholder="Your Type *" value="<%= Edit_Curd.type %>" >
+        <div class="form-group">
+        <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3" placeholder="Your Descriptions *"><%= Edit_Curd.text %></textarea>
+        </div>
+        </fieldset>
+        <input type="submit" value="Submit" />
+        </form>
+        </div>
+</body>
+</html>
